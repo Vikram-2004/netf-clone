@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { FC, useCallback, useState } from "react";
 import Inputs from "../../components/Inputs";
 
