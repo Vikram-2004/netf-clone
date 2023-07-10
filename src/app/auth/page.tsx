@@ -10,11 +10,11 @@ const Auth: FC<authProps> = ({}) => {
   const [password, setPassword] = useState("");
   const [variant, setVariant] = useState("login");
 
-  const toggleVariant = useCallback(() => {
+  const toggleVariant = () => {
     setVariant((currentVariant) =>
       currentVariant === "login" ? "register" : "login"
     );
-  }, []);
+  };
 
   return (
     <div className="relative h-screen w-screen bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
